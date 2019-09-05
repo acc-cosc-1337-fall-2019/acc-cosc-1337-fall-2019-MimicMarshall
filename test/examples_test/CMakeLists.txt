@@ -1,5 +1,5 @@
-ADD_SUBDIRECTORY(01_module_test)
-#ADD_SUBDIRECTORY(02_module_test)
+#ADD_SUBDIRECTORY(01_module_test)
+ADD_SUBDIRECTORY(02_module_test)
 #ADD_SUBDIRECTORY(03_module_test)
 #ADD_SUBDIRECTORY(04_module_test)
 #ADD_SUBDIRECTORY(09_module_test)
