@@ -8,7 +8,8 @@ TEST_CASE("Verify Test Configuration", "verification") {
 
 TEST_CASE("Verify multip_numbers function") 
 {
-	REQUIRE(multip_numbers(5, 5) == 25);
+	REQUIRE(multip_numbers(2, 4) == 8);
+	REQUIRE(multip_numbers(3, 5) == 15);
 	REQUIRE(multip_numbers(10, 10) == 100);
 }
 
