@@ -1,6 +1,6 @@
 #include<string>
 #include<iostream>
-#include "sample_for_ranged.h"
+#include "for_ranged.h"
 
 int main() 
 {
@@ -11,7 +11,7 @@ int main()
 	nums.push_back(25);
 	nums.erase(nums.begin() + 1);
 
-	loop_vector_w_index(nums);
+	//loop_vector_w_index(nums);
 
 	return 0;
 }

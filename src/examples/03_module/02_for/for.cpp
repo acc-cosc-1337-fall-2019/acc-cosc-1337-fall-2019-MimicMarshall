@@ -1,4 +1,4 @@
-#include "sample_for.h"
+#include "for.h"
 #include<iostream>
 
 //Write code for function display_numbers that accepts a number and 
@@ -15,3 +15,9 @@ RESULT:
 
 */
 
+void display_numbers(int num)
+{
+	for (int i = 1; i <= num; i++)
+		std::cout << i << "\n";
+	std::cout << "Nice!";
+}
