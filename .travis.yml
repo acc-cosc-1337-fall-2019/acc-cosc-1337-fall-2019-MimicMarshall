@@ -24,5 +24,5 @@ script:
   - cd build
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
   - ./test/examples_test/03_module_test/ex_03_tests -s
-  - ./test/classwork_test/02_assign_test/cw_02_tests -s
+  - ./test/classwork_test/03_assign_test/cw_03_tests -s
   - ./test/homework_test/02_decisions_test/hw_02_tests -s
