@@ -22,12 +22,12 @@ int main()
 		cout << "Tell me the DNA sequence that you want to analyze: ";
 		cin >> dna;
 		int menu = 0;
-		cout << "Tell me if you want the (1)GC Content or (2)DNA Complement: ";
+		cout << "Tell me if you want the (1)G/C Content or (2)DNA Complement: ";
 		cin >> menu;
 		switch (menu)
 		{
 		case 1:
-			cout << "The GC Content of " << dna << " is " << get_gc_content(dna) << "\n";
+			cout << "The G/C Content of " << dna << " is " << get_gc_content(dna) << "\n";
 			break;
 		case 2:
 			cout << "The DNA complement of " << dna << " is " << get_dna_complement(dna) << "\n";

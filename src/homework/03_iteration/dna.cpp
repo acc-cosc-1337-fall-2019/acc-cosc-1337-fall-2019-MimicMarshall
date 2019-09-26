@@ -33,9 +33,9 @@ accepts a string parameter and returns a string reversed.
 */
 string get_reverse_string(string RVDNA) 
 {
-	int dna_size = RVDNA.size();
+	int dna_size = RVDNA.size() - 1; //apply the -1 to end
 	string reverse = "";
-	for (int i = dna_size; i > 0; i--)
+	for (int i = dna_size; i >= 0; i--) // make greater than and equal to
 	{
 		reverse = reverse + RVDNA.at(i);
 	}
