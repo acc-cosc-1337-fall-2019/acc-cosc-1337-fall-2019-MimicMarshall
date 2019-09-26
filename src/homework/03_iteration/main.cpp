@@ -27,9 +27,11 @@ int main()
 		switch (menu)
 		{
 		case 1:
-			cout << get_gc_content(dna);
+			cout << "The GC Content of " << dna << " is " << get_gc_content(dna) << "\n";
+			break;
 		case 2:
-			cout << get_dna_complement(dna);
+			cout << "The DNA complement of " << dna << " is " << get_dna_complement(dna) << "\n";
+			break;
 		default:
 			cout << "Invalid Option\n";
 		}

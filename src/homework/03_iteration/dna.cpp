@@ -11,16 +11,17 @@ Return quotient.
 double get_gc_content(const string DNA)
 {
 	int dna_size = DNA.size();
-	int counter = 0;
+	string letter = "";
+	double counter = 0;
 	for (int i = 0; i < dna_size; i++)
 	{
-		char letter = DNA.at(i);
-		if (letter == 'C' || letter == 'G')
+		letter = DNA.at(i);
+		if (letter == "C" || letter == "G")
 		{
 			counter++;
 		}
 	}
-	double percent = dna_size / counter;
+	double percent = counter / dna_size;
 	return percent;
 }
 
@@ -54,7 +55,7 @@ c. return string
 */
 string get_dna_complement(string DNACOMP)
 {
-	string reverse = get_reverse_string(DNACOMP);
+	string reverse = DNACOMP; //get_reverse_string(DNACOMP);
 	string complement = "";
 	for (int i = 0; i < reverse.size(); i++)
 	{
