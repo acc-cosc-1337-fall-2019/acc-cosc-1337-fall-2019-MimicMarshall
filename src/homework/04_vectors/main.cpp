@@ -1,3 +1,7 @@
+#include "vectors.h"
+#include<iostream>
+using std::cout;
+using std::cin;
 /*
 use a vector of int with values 8, 4, 20, 88, 66, 99
 
@@ -9,6 +13,11 @@ Program continues until user decides to exit.
 */
 int main() 
 {
+	vector<int> vec = { 8,4,20,88,66,99 };
+	int number = get_max_from_vector(vec);
+	cout << "The greatest value in the vector is " << number << "\n";
+
+
 
 	return 0;
 }
