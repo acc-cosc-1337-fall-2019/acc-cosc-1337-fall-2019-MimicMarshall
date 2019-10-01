@@ -17,6 +17,6 @@ TEST_CASE("Test get_reverse_string function")
 }
 TEST_CASE("Test get_dna_complement function")
 {
-	REQUIRE(get_dna_complement("AAAACCCGGT") == "TTTTGGGCCA"); // change end values to reflect what is required, and not what is on blackboard
-	REQUIRE(get_dna_complement("CCCGGAAAAT") == "GGGCCTTTTA");
+	REQUIRE(get_dna_complement("AAAACCCGGT") == "ACCGGGTTTT"); // change end values to reflect what is required, and not what is on blackboard
+	REQUIRE(get_dna_complement("CCCGGAAAAT") == "ATTTTCCGGG");
 }

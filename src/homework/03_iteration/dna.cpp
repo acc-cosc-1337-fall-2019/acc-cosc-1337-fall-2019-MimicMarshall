@@ -55,7 +55,7 @@ c. return string
 */
 string get_dna_complement(string DNACOMP)
 {
-	string reverse = DNACOMP; //get_reverse_string(DNACOMP);
+	string reverse = get_reverse_string(DNACOMP);
 	string complement = "";
 	for (int i = 0; i < reverse.size(); i++)
 	{
