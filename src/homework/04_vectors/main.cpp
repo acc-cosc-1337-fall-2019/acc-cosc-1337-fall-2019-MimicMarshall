@@ -19,8 +19,11 @@ int main()
 	while (menu_choice == "y" || menu_choice == "Y")
 	{
 		vector<int> vec = { 8,4,20,88,66,99 };
-		int number = get_max_from_vector(vec);
-		cout << "The greatest value in the vector is " << number << "\n";
+		int max = get_max_from_vector(vec);
+		cout << "The greatest value in the vector is " << max << "\n";
+
+		int prime = is_prime(4);
+		cout << "The number 4 is " << prime << "\n";
 
 
 

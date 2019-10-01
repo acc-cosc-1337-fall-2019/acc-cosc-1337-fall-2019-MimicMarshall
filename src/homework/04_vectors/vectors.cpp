@@ -11,7 +11,7 @@ int get_max_from_vector(const vector<int>& numbers)
 	int greatest = numbers.at(0);
 	for (int i = 1; i < numbers.size(); i++)
 	{
-		if (i > greatest)
+		if (numbers.at(i) > greatest)
 			greatest = numbers.at(i);
 	}
 	return greatest;
@@ -27,7 +27,21 @@ given a number returns true if prime or false if not prime
 */
 bool is_prime(int num)
 {
-	return false;
+	int n, i, prime_check = 0;
+	for (int i = 2; i <= num / 2; i++)
+	{
+		if (num % i == 0)
+			prime_check = 1;
+	}
+	if (num == 1)
+		return false;
+	else
+	{
+		if (prime_check == 1)
+			return false;
+		else
+			return true;
+	}
 }
 
 /*
