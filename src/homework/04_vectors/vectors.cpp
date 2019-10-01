@@ -27,7 +27,7 @@ given a number returns true if prime or false if not prime
 */
 bool is_prime(int num)
 {
-	return 0;
+	return false;
 }
 
 /*
@@ -42,3 +42,7 @@ Example given number 10 returns a vector with elements 2,3,5,7,
 Make sure to use the is_prime function to determine if current 
 number is prime.
 */
+vector<int> vector_of_prime(int num)
+{
+	return vector<int>();
+}

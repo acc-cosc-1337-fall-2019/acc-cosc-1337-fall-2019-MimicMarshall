@@ -1,5 +1,7 @@
 #include "vectors.h"
 #include<iostream>
+#include<string>
+using std::string;
 using std::cout;
 using std::cin;
 /*
@@ -13,9 +15,22 @@ Program continues until user decides to exit.
 */
 int main() 
 {
-	vector<int> vec = { 8,4,20,88,66,99 };
-	int number = get_max_from_vector(vec);
-	cout << "The greatest value in the vector is " << number << "\n";
+	string menu_choice = "y";
+	while (menu_choice == "y" || menu_choice == "Y")
+	{
+		vector<int> vec = { 8,4,20,88,66,99 };
+		int number = get_max_from_vector(vec);
+		cout << "The greatest value in the vector is " << number << "\n";
+
+
+
+
+
+
+		cout << "Do you you want to try again? Press 'Y' to repeat. ";
+		cin >> menu_choice;
+	}
+	
 
 
 

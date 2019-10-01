@@ -29,3 +29,5 @@ Iterate vector with a for ranged loop (use auto)
 void loop_vector_w_for_ranged(std::vector<int>& nums);
 
 void loop_vector_w_for_ranged_ref_var(std::vector<int>& nums);
+
+std::vector<int> ret_vec_int();
