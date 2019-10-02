@@ -1,0 +1,356 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						9
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						7
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/classwork",
+					"childIndexes" : 
+					[
+						3
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/classwork"
+				},
+				{
+					"build" : "src/classwork/03_assign",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/classwork/03_assign",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "src/examples",
+					"childIndexes" : 
+					[
+						5
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/examples"
+				},
+				{
+					"build" : "src/examples/04_module",
+					"childIndexes" : 
+					[
+						6
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples/04_module"
+				},
+				{
+					"build" : "src/examples/04_module/01_bank",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/examples/04_module/01_bank",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"build" : "src/homework",
+					"childIndexes" : 
+					[
+						8
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/homework"
+				},
+				{
+					"build" : "src/homework/04_vectors",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 0,
+					"source" : "src/homework/04_vectors",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"build" : "test",
+					"childIndexes" : 
+					[
+						10,
+						12,
+						14
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test"
+				},
+				{
+					"build" : "test/classwork_test",
+					"childIndexes" : 
+					[
+						11
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 0,
+					"source" : "test/classwork_test"
+				},
+				{
+					"build" : "test/classwork_test/03_assign_test",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 0,
+					"source" : "test/classwork_test/03_assign_test",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "test/examples_test",
+					"childIndexes" : 
+					[
+						13
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 0,
+					"source" : "test/examples_test"
+				},
+				{
+					"build" : "test/examples_test/04_module_test",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "test/examples_test/04_module_test",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "test/homework_test",
+					"childIndexes" : 
+					[
+						15
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 0,
+					"source" : "test/homework_test"
+				},
+				{
+					"build" : "test/homework_test/04_vectors",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "test/homework_test/04_vectors",
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					],
+					"name" : "cosc1337",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "cw_03_exe::@2a1e219c2edf77662be8",
+					"jsonFile" : "target-cw_03_exe-Debug-2abdbb6bef957801af8d.json",
+					"name" : "cw_03_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "cw_03_library::@2a1e219c2edf77662be8",
+					"jsonFile" : "target-cw_03_library-Debug-e3a69ed900f19fb43205.json",
+					"name" : "cw_03_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "cw_03_tests::@58ec20b27cb83ae5a36c",
+					"jsonFile" : "target-cw_03_tests-Debug-e812156f240b63843417.json",
+					"name" : "cw_03_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ex_04_01_exe::@4e2faa1e2196244484c0",
+					"jsonFile" : "target-ex_04_01_exe-Debug-4cd415e25cf28c0112fb.json",
+					"name" : "ex_04_01_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ex_04_01_library::@4e2faa1e2196244484c0",
+					"jsonFile" : "target-ex_04_01_library-Debug-4b5f4caa229d9b1a0d6e.json",
+					"name" : "ex_04_01_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "ex_04_tests::@a6224bf2190e93d7f735",
+					"jsonFile" : "target-ex_04_tests-Debug-1b608263f7adda286265.json",
+					"name" : "ex_04_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "hw_04_exe::@2aee3304f88c812540ff",
+					"jsonFile" : "target-hw_04_exe-Debug-a9ee687944a664dee526.json",
+					"name" : "hw_04_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "hw_04_library::@2aee3304f88c812540ff",
+					"jsonFile" : "target-hw_04_library-Debug-893dc4b5fb87fe58b56e.json",
+					"name" : "hw_04_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "hw_04_tests::@5682989e21fca7be940a",
+					"jsonFile" : "target-hw_04_tests-Debug-290fe172f7c2e035a11a.json",
+					"name" : "hw_04_tests",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall/out/build/x64-Debug",
+		"source" : "C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

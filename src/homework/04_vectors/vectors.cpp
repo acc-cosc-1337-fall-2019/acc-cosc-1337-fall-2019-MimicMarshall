@@ -8,8 +8,8 @@ vector of intsparameter that returns the max value in a vector
 */
 int get_max_from_vector(const vector<int>& numbers)
 {
-	int greatest = numbers.at(0);
-	for (int i = 1; i < numbers.size(); i++)
+	int greatest = 0;
+	for (int i = 0; i < numbers.size(); i++)
 	{
 		if (numbers.at(i) > greatest)
 			greatest = numbers.at(i);
@@ -58,5 +58,12 @@ number is prime.
 */
 vector<int> vector_of_prime(int num)
 {
-	return vector<int>();
+	vector<int> prime_vector = {};
+	for (int i = 0; i < num; i++)
+	{
+		bool prime_check = is_prime(i);
+		if (prime_check == 1)
+			prime_vector.push_back(i);
+	}
+	return prime_vector;
 }
