@@ -35,6 +35,8 @@ bool is_prime(int num)
 	}
 	if (num == 1)
 		return false;
+	else if (num == 0)
+		return false;
 	else
 	{
 		if (prime_check == 1)
@@ -62,7 +64,7 @@ vector<int> vector_of_prime(int num)
 	for (int i = 0; i < num; i++)
 	{
 		bool prime_check = is_prime(i);
-		if (prime_check == 1)
+		if (prime_check == true)
 			prime_vector.push_back(i);
 	}
 	return prime_vector;
