@@ -19,10 +19,10 @@ Iterate the vector and display the Area for each Rectangle on one line and the t
 */
 int main()
 {
-	vector<Rectanglee> rectangles;
-	rectangles.push_back(Rectanglee(4, 5));
-	rectangles.push_back(Rectanglee(10, 10));
-	rectangles.push_back(Rectanglee(100, 10));
+	vector<acc::Rectangle> rectangles;
+	rectangles.push_back(acc::Rectangle(4, 5));
+	rectangles.push_back(acc::Rectangle(10, 10));
+	rectangles.push_back(acc::Rectangle(100, 10));
 
 	for (auto rec : rectangles)
 	{
