@@ -5,11 +5,10 @@
 //public
 bool TicTacToe::game_over()
 {
-	if (check_column_win() || check_row_win ||
-		check_diagonal_win || check_board_full)
+	if (check_column_win() || check_row_win() ||
+		check_diagonal_win() || check_board_full())
 		return true;
-	else
-		return false;
+	return false;
 }
 
 void TicTacToe::start_game(string player)
@@ -23,6 +22,12 @@ void TicTacToe::mark_board(int position)
 {
 	pegs[position - 1] = next_player;
 	set_next_player();
+	//123456789 // what player sees
+	//012345678 //what programmer sees
+
+	/*"0" | "1" | "2"
+	 "3" | "4" | "5"
+	 "6" | "7" | "8"*/
 }
 
 string TicTacToe::get_player() const
