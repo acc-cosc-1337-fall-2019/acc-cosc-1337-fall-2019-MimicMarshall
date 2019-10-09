@@ -1,5 +1,5 @@
 #ADD_SUBDIRECTORY(01_expressions)
 #ADD_SUBDIRECTORY(02_decisions)
 #ADD_SUBDIRECTORY(03_iteration)
-ADD_SUBDIRECTORY(04_vectors)
-#ADD_SUBDIRECTORY(tic_tac_toe)
+#ADD_SUBDIRECTORY(04_vectors)
+ADD_SUBDIRECTORY(tic_tac_toe)
