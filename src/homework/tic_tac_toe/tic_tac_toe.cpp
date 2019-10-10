@@ -26,8 +26,8 @@ void TicTacToe::mark_board(int position)
 	//012345678 //what programmer sees
 
 	/*"0" | "1" | "2"
-	 "3" | "4" | "5"
-	 "6" | "7" | "8"*/
+	  "3" | "4" | "5"
+	  "6" | "7" | "8"*/
 }
 
 string TicTacToe::get_player() const
@@ -37,6 +37,9 @@ string TicTacToe::get_player() const
 
 void TicTacToe::display_board() const
 {
+	cout << pegs[0] << " | " << pegs[1] << " | " << pegs[2] << "\n";
+	cout << pegs[3] << " | " << pegs[4] << " | " << pegs[5] << "\n";
+	cout << pegs[6] << " | " << pegs[7] << " | " << pegs[8] << "\n";
 }
 
 
@@ -59,6 +62,7 @@ bool TicTacToe::check_column_win()
 
 bool TicTacToe::check_row_win()
 {
+	for(std::size_t i  = 0; i < 3; i++)
 	return false;
 }
 
@@ -69,6 +73,8 @@ bool TicTacToe::check_diagonal_win()
 
 void TicTacToe::clear_board()
 {
+	for (std::size_t i = 0; i < 9; i++)
+		pegs[i] = " ";
 }
 
 bool TicTacToe::check_board_full()

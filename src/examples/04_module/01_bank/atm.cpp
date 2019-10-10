@@ -13,7 +13,7 @@ ATM::ATM(BankAccount a) : account(a)
 
 void ATM::display_balance() const
 {
-	cout << "Balance: " << account.get_balance();
+	cout << "Balance: " << account.get_balance() << "\n";
 }
 
 void ATM::deposit(int amount)
