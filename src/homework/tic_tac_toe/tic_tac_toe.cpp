@@ -79,5 +79,12 @@ void TicTacToe::clear_board()
 
 bool TicTacToe::check_board_full()
 {
+	/*
+	int test = 0;
+	while (test == 0)
+	{
+		if (pegs[i] == " ")
+	}
+	return false;*/
 	return false;
 }
