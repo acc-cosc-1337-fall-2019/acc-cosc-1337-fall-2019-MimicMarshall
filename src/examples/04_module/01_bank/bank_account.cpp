@@ -25,6 +25,14 @@ int BankAccount::get_balance() const
 	return balance;
 }
 
+BankAccount BankAccount::operator+(const BankAccount & b)
+{
+	BankAccount account;
+	account.balance = balance + b.balance;
+
+	return account;
+}
+
 void display(const BankAccount & account)
 {
 	std::cout << "Balance: " << account.balance << "\n";

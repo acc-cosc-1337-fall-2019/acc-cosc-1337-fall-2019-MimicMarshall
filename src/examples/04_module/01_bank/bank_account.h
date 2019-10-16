@@ -13,6 +13,8 @@ public:
 	friend void display(const BankAccount& account);
 	friend std::ostream & operator << (std::ostream& out, const BankAccount& b);
 	friend std::istream & operator >> (std::istream& in, BankAccount& b);
+	BankAccount operator+(const BankAccount& b);
+
 
 protected:
 	int balance;
