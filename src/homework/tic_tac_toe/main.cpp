@@ -15,17 +15,8 @@ int main()
 		bool gaming = false;
 		while (gaming == false)
 		{
-			int move;
-			string player1 = " ";
-			if (player == "X" || player == "x")
-				player1 = "O";
-			else
-				player1 = "X";
-			cout << "Player " << player << " please choose a position between 1-9: ";
-			cin >> move;
-			a.mark_board(move);
-			a.display_board();
-			cout << "\n";
+			cin >> a;
+			cout << a;
 			int winner = 0;
 			bool done = a.game_over();
 			if (done == true)
@@ -39,11 +30,8 @@ int main()
 			}
 			else if (done == false)
 			{
-				cout << "Player " << player1 << " please choose a position between 1-9: ";
-				cin >> move;
-				a.mark_board(move);
-				a.display_board();
-				cout << "\n";
+				cin >> a;
+				cout << a;
 			}
 			bool over = a.game_over();
 			if (over == true) 
@@ -56,11 +44,8 @@ int main()
 				gaming = true;
 			}
 		}
-
-
 		cout << "Do you want to play again? Press 'y' to repeat: ";
 		cin >> menu_choice;
-
 	}
 
 
