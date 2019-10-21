@@ -13,7 +13,7 @@ public:
 	void mark_board(int position);
 	string get_player() const;
 	friend std::istream& operator >> (std::istream& in, TicTacToe& position);
-	friend std::ostream& operator << (std::ostream& out, TicTacToe& display);
+	friend std::ostream& operator << (std::ostream& out, const TicTacToe& display);
 
 private:
 	void set_next_player();

@@ -103,7 +103,7 @@ std::istream& operator>>(std::istream& in, TicTacToe& position)
 	return in;
 }
 
-std::ostream& operator<<(std::ostream& out, TicTacToe& display)
+std::ostream& operator<<(std::ostream& out, const TicTacToe& display)
 {
 	out << display.pegs[0] << " | " << display.pegs[1] << " | " << display.pegs[2] << "\n"
 		 << display.pegs[3] << " | " << display.pegs[4] << " | " << display.pegs[5] << "\n"
