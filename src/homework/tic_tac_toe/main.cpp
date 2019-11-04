@@ -4,66 +4,52 @@
 #include"tic_tac_toe_manager.h"
 int main() 
 {
-	TicTacToe a;
 	TicTacToeManager manager;
 	string menu_choice = "y";
 	int game_type;
 
-
 	while (menu_choice == "y" || menu_choice == "Y")
 	{
-		cout << "Play win by 3 or 4: ";
+		cout << "Welcome to tic tac toe! \n";
+		cout << "Play win by 3 or 4?: ";
 		cin >> game_type;
+
 		TicTacToe* game;
-		if (game_type == 3) 
+
+		if (game_type == 3)
 		{
+			cout << "This is a game of Tic Tac Toe \n";
+			cout << "1 | 2 | 3\n" << "4 | 5 | 6\n" << "7 | 8 | 9\n";
+			cout << "Player 1 enter capital 'X' or 'O': ";
 			game = new TicTacToe3();
 		}
 		else
 		{
+			cout << "This is a game of Tic Tac Toe \n";
+			cout << "1 | 2 | 3 | 4\n" << "5 | 6 | 7 | 8\n" << "9 | 10 | 11 | 12\n" << "13 | 14 | 15 | 16\n";
+			cout << "Player 1 enter capital 'X' or 'O': ";
 			game = new TicTacToe4();
 		}
-		string player = " ";
-		cout << "This is a game of Tic Tac Toe \n";
-		cout << "1 | 2 | 3\n" << "4 | 5 | 6\n" << "7 | 8 | 9\n";
-		cout << "Player 1 enter capital 'X' or 'O': ";
+
+
+		cout << "\n";
+		string player;
+		cout << "Player 1 please enter capital 'X' or 'O' : ";
 		cin >> player;
+
 		game->start_game(player);
-		bool gaming = false;
-		while (gaming == false)
+		while (game->game_over() == false)
 		{
-			cin >> a;
-			cout << a;
-			int winner = 0;
-			bool done = a.game_over();
-			if (done == true)
-			{
-				if (winner != 1)
-				{
-					cout << "Winner!\n";
-					winner = 1;
-				}
-				gaming = true;
-			}
-			else if (done == false)
-			{
-				cin >> a;
-				cout << a;
-			}
-			bool over = a.game_over();
-			if (over == true) 
-			{
-				if (winner != 1)
-				{
-					cout << "Winner!\n";
-					winner = 1;
-				}
-				gaming = true;
-			}
+			cin >> *game;
+			cout << *game;
 		}
 
+		cout << "Winner: ";
+		cout << game->get_winner() << "\n";
+
 		manager.save_game(*game);
-		cout << "Do you want to play again? Press 'y' to repeat: ";
+
+		cout << "Do you want to play again? press 'y' to repeat";
 		cin >> menu_choice;
 	}
 

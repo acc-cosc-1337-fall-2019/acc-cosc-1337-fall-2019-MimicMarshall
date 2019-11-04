@@ -2,11 +2,15 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include"tic_tac_toe_3.h"
+#include"tic_tac_toe_4.h"
+#include"tic_tac_toe_manager.h"
 #ifndef TIC_TAC_TOE_H
 #define TIC_TAC_TOE_H
 
 using std::cin; using std::cout; 
 using std::string; using std::vector;
+using std::ostream;
 //One Game of TicTacToe
 class TicTacToe
 {
