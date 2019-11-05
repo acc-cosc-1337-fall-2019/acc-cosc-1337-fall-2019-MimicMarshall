@@ -26,15 +26,12 @@ int main()
 		else
 		{
 			cout << "This is a game of Tic Tac Toe \n";
-			cout << "1 | 2 | 3 | 4\n" << "5 | 6 | 7 | 8\n" << "9 | 10 | 11 | 12\n" << "13 | 14 | 15 | 16\n";
+			cout << "1  | 2  | 3  | 4\n" << "5  | 6  | 7  | 8\n" << "9  | 10 | 11 | 12\n" << "13 | 14 | 15 | 16\n";
 			cout << "Player 1 enter capital 'X' or 'O': ";
 			game = new TicTacToe4();
 		}
 
-
-		cout << "\n";
 		string player;
-		cout << "Player 1 please enter capital 'X' or 'O' : ";
 		cin >> player;
 
 		game->start_game(player);

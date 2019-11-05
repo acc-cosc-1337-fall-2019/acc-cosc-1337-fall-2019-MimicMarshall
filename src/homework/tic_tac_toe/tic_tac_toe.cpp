@@ -29,8 +29,7 @@ void TicTacToe::start_game(string player)
 void TicTacToe::mark_board(int position)
 {
 	pegs[position - 1] = next_player;
-	if(game_over() == false)
-		set_next_player();
+	set_next_player();
 	//123456789 // what player sees
 	//012345678 //what programmer sees
 
@@ -95,7 +94,6 @@ bool TicTacToe::check_board_full()
 
 void TicTacToe::set_winner()
 {
-	if(check_board_full())
 	if (next_player == "X")
 		winner = "O";
 	else
@@ -135,10 +133,10 @@ std::ostream& operator<<(std::ostream& out, const TicTacToe& display)
 	}
 	else if (display.pegs.size() == 16)
 	{
-		out << display.pegs[0] << " | " << display.pegs[1] << " | " << display.pegs[2] << display.pegs[3] << " \n"
-			<< display.pegs[4] << " | " << display.pegs[5] << " | " << display.pegs[6] << display.pegs[7] << " \n"
-			<< display.pegs[8] << " | " << display.pegs[9] << " | " << display.pegs[10] << display.pegs[11] << "\n"
-			<< display.pegs[12] << " | " << display.pegs[13] << " | " << display.pegs[14] << display.pegs[15] << "\n";
+		out << display.pegs[0] << " | " << display.pegs[1] << " | " << display.pegs[2] << " | " << display.pegs[3] << " \n"
+			<< display.pegs[4] << " | " << display.pegs[5] << " | " << display.pegs[6] << " | " << display.pegs[7] << " \n"
+			<< display.pegs[8] << " | " << display.pegs[9] << " | " << display.pegs[10] << " | " << display.pegs[11] << "\n"
+			<< display.pegs[12] << " | " << display.pegs[13] << " | " << display.pegs[14] << " | " << display.pegs[15] << "\n";
 	}
 	return out;
 }
