@@ -52,7 +52,7 @@ int main()
 
 
 	cout << "History: \n";
-	cout << manager;
+	cout << *manager;
 
 
 	return 0;
