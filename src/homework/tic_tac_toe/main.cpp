@@ -4,7 +4,7 @@
 #include"tic_tac_toe_manager.h"
 int main() 
 {
-	TicTacToeManager manager;
+	unique_ptr<TicTacToeManager> manager = std::make_unique<TicTacToeManager>();
 	string menu_choice = "y";
 	int game_type;
 
@@ -14,21 +14,21 @@ int main()
 		cout << "Play win by 3 or 4?: ";
 		cin >> game_type;
 
-		TicTacToe* game;
+		unique_ptr<TicTacToe> game;
 
 		if (game_type == 3)
 		{
 			cout << "This is a game of Tic Tac Toe \n";
 			cout << "1 | 2 | 3\n" << "4 | 5 | 6\n" << "7 | 8 | 9\n";
 			cout << "Player 1 enter capital 'X' or 'O': ";
-			game = new TicTacToe3();
+			game = std::make_unique<TicTacToe3>();
 		}
 		else
 		{
 			cout << "This is a game of Tic Tac Toe \n";
 			cout << "1  | 2  | 3  | 4\n" << "5  | 6  | 7  | 8\n" << "9  | 10 | 11 | 12\n" << "13 | 14 | 15 | 16\n";
 			cout << "Player 1 enter capital 'X' or 'O': ";
-			game = new TicTacToe4();
+			game = std::make_unique<TicTacToe4>();
 		}
 
 		string player;
@@ -44,7 +44,7 @@ int main()
 		cout << "Winner: ";
 		cout << game->get_winner() << "\n";
 
-		manager.save_game(*game);
+		manager->save_game(game);
 
 		cout << "Do you want to play again? press 'y' to repeat";
 		cin >> menu_choice;
