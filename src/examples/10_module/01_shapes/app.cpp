@@ -1,5 +1,5 @@
-#include "app.h"
-#include "frame.h"
+#include "../src/examples/10_module/01_shapes/app.h"
+#include "../src/examples/10_module/01_shapes/frame.h"
 
 bool App::OnInit() 
 {

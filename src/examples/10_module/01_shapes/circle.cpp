@@ -1,4 +1,4 @@
-#include "circle.h"
+#include "../src/examples/10_module/01_shapes/circle.h"
 
 void Circle::draw() 
 {

@@ -2,5 +2,5 @@
 #ADD_SUBDIRECTORY(02_decisions)
 #ADD_SUBDIRECTORY(03_iteration)
 #ADD_SUBDIRECTORY(04_vectors)
-ADD_SUBDIRECTORY(tic_tac_toe)
-ADD_SUBDIRECTORY(tic_tac_toe_gui)
+#ADD_SUBDIRECTORY(tic_tac_toe)
+#ADD_SUBDIRECTORY(tic_tac_toe_gui)

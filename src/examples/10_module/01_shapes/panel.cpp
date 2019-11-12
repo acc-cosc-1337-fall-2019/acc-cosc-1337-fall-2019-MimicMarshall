@@ -1,4 +1,4 @@
-#include "panel.h"
+#include "../src/examples/10_module/01_shapes/panel.h"
 
 Panel::Panel(wxWindow* parent) : wxPanel(parent, -1) 
 {
@@ -42,7 +42,7 @@ void Panel::OnDraw(wxCommandEvent & event)
 
 	draw_shape(Point(200, 200));
 
-	shape->draw();
+	//shape->draw();
 }
 
 void Panel::OnMouseDown(wxMouseEvent & event)

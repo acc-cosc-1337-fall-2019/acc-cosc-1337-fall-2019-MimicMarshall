@@ -1,4 +1,4 @@
-#include "text.h"
+#include "../src/examples/10_module/01_shapes/text.h"
 
 void Text::draw() 
 {

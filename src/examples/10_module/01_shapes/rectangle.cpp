@@ -1,4 +1,4 @@
-#include "rectangle.h"
+#include "../src/examples/10_module/01_shapes/rectangle.h"
 
 void acc::Rectangle::draw()
 {

@@ -1,8 +1,8 @@
 #ifndef TEXT_H
 #define TEXT_H
 #include<wx/wx.h>
-#include "shape.h"
-#include "point.h"
+#include "../src/examples/10_module/01_shapes/shape.h"
+#include "../src/examples/10_module/01_shapes/point.h"
 
 using std::string;
 
