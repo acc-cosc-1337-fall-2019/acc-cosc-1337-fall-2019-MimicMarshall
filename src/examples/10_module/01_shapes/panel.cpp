@@ -1,4 +1,4 @@
-#include "../src/examples/10_module/01_shapes/panel.h"
+#include "panel.h"
 
 Panel::Panel(wxWindow* parent) : wxPanel(parent, -1) 
 {
@@ -41,8 +41,6 @@ void Panel::OnDraw(wxCommandEvent & event)
 	cdc->Clear();
 
 	draw_shape(Point(200, 200));
-
-	//shape->draw();
 }
 
 void Panel::OnMouseDown(wxMouseEvent & event)
@@ -78,7 +76,7 @@ void Panel::draw_shape(Point p, int width, int height, int radius)
 	}
 	else if (radio_box->GetSelection() == 2)//Draw Rectangle
 	{
-		shape = std::make_unique<acc::Rectangle>(cdc, p, width, height);
+		shape = std::make_unique<mod10ex::Rectangle>(cdc, p, width, height);
 	}
 
 	shape->draw();

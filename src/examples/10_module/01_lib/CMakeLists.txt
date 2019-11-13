@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(grahics_clock)
+project(graphics_shapes_lib)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -12,11 +12,10 @@ find_package(wxWidgets REQUIRED net gl core base)
 if(wxWidgets_FOUND)
 	include(${wxWidgets_USE_FILE})
 
-	set(SOURCE_FILES main.cpp app.h app.cpp frame.h frame.cpp 
-	                 panel.h panel.cpp clock.h clock.cpp
-					 clock_graphic.h clock_graphic.cpp)
-	
-	add_executable(ex_10_02_exe WIN32 ${SOURCE_FILES})
-	target_link_libraries(ex_10_02_exe ${wxWidgets_LIBRARIES} ex_10_01_lib)
-endif()
+	set(SOURCE_FILES point.h shape.h shape.cpp 
+					 text.h text.cpp circle.h circle.cpp
+					 ellipse.h ellipse.cpp line.h line.cpp
+					 rectangle.h rectangle.cpp)
 
+    add_library(ex_10_01_lib ${SOURCE_FILES})					   
+endif()

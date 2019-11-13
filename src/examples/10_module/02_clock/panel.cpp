@@ -34,6 +34,6 @@ void Panel::OnStartTimer(wxCommandEvent & event)
 
 void Panel::OnTimer(wxTimerEvent & event)
 {
-	clock->draw();
+	
 }
 

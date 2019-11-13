@@ -13,11 +13,8 @@ if(wxWidgets_FOUND)
 	include(${wxWidgets_USE_FILE})
 
 	set(SOURCE_FILES main.cpp app.h app.cpp frame.h frame.cpp 
-	                 panel.h panel.cpp point.h shape.h shape.cpp 
-					 text.h text.cpp circle.h circle.cpp
-					 rectangle.h rectangle.cpp)
+	                 panel.h panel.cpp)
 
-    add_library(ex_10_01_library ${SOURCE_FILES})					   
 	add_executable(ex_10_01_exe WIN32 ${SOURCE_FILES})
-	target_link_libraries(ex_10_01_exe ${wxWidgets_LIBRARIES} )
+	target_link_libraries(ex_10_01_exe ${wxWidgets_LIBRARIES} ex_10_01_lib)
 endif()

@@ -3,7 +3,7 @@
 ClockGraphic::ClockGraphic(wxDC* dc, Point s, Point e)
 	: device_context(dc), start(s), end(e)
 {
-	clock_rim = std::make_unique<Circle>(dc, s, e);
+	clock_rim = std::make_unique<mod10ex::Ellipse>(dc, s, e);
 	wxRect w(start.x, start.y, end.x, end.y);
 	height = w.GetHeight();
 	width = w.GetWidth();
@@ -13,14 +13,7 @@ ClockGraphic::ClockGraphic(wxDC* dc, Point s, Point e)
 void ClockGraphic::draw()
 {
 	device_context->SetPen(wxPen(wxColor(0, 0, 0), 1));
-	clock_rim->draw();
-	draw_seconds_markers();
-	draw_hours_text();
-	draw_hours_hand();
-	draw_minutes_hand();
-	draw_seconds_hand();
-	//draw_digital_time();
-	clock.update_time();
+	
 }
 
 /*
@@ -28,89 +21,43 @@ Draw a clock hand on this Clock at angle degrees length pixels long
 */
 void ClockGraphic::draw_hand(double degrees, int length)
 {
-	double angle = get_angle(degrees);
-	int x1 = width / 2;
-	int y1 = height / 2;
-	int x2 = cos(angle) * length + width / 2;
-	int y2 = sin(angle) * length + width / 2;
-
-	std::unique_ptr<Shape> line = std::make_unique<Line>(device_context, Point(x1, y1), Point(x2, y2));
-	line->draw();
+	
 }
 
 void ClockGraphic::draw_hours_hand()
 {
-	double hours_angle = clock.get_hours() / 12.0 * 360.0;
-	device_context->SetPen(wxPen(wxColor(255, 0, 0), 3));
-	draw_hand(hours_angle, 45);
+
 }
 
 void ClockGraphic::draw_minutes_hand()
 {
-	double minutes_angle = clock.get_minutes() / 60.0 * 360.0;
-
-	device_context->SetPen(wxPen(wxColor(0, 0, 255), 3));
-	draw_hand(minutes_angle, 90);
+	
 }
 
 void ClockGraphic::draw_seconds_hand()
 {
-	double seconds_angle = clock.get_seconds() / 60.0 * 360.0;
-
-	device_context->SetPen(wxPen(wxColor(0, 255, 0), 1));
-	draw_hand(seconds_angle, 105);
+	
 }
 
 void ClockGraphic::draw_hours_text()
 {
-	for (int i = 0; i < 12; i++)
-	{
-		double hours_angle = i / 12.0 * 360.0;
-		double angle = get_angle(hours_angle);
-		double length = 90;
-
-		if (i < 3 || i > 8)
-		{
-			length = 100;
-		}
-
-		int x1 = cos(angle) * length + width / 2;
-		int y1 = sin(angle) * length + width / 2;
-		int hour;
-		if (i == 0)
-			hour = 12;
-		else
-			hour = i;
-		std::unique_ptr<Shape> text = std::make_unique<Text>(device_context,
-			std::to_string(hour),
-			Point(x1, y1));
-		text->draw();
-
-	}
+	
 }
 
 void ClockGraphic::draw_seconds_markers()
 {
-	for (int i = 0; i < 60; i++)
-	{
-		double seconds_angle = i / 60.0 * 360.0;
-		double angle = get_angle(seconds_angle);
-		double inner_length = 105;
-		double outer_length = 110;
-
-		int x1 = cos(angle) * inner_length + width / 2;
-		int y1 = sin(angle) * inner_length + width / 2;
-		int x2 = cos(angle) * outer_length + width / 2;
-		int y2 = sin(angle) * outer_length + width / 2;
-
-		std::unique_ptr<Shape> line = std::make_unique<Line>(device_context, Point(x1, y1), Point(x2, y2));
-		line->draw();
-	}
+	
 
 }
 
-double ClockGraphic::get_angle(double degrees)
+/*
+Given degrees return the radians
+
+@param degrees from 0 to 360
+@return radians
+*/
+double ClockGraphic::get_degrees(double angle)
 {
-	return ((degrees - 90) * pi) / 180;
+	return angle * pi / 180;
 }
 

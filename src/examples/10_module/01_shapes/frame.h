@@ -1,7 +1,7 @@
 #ifndef FRAME_H
 #define FRAME_H
 #include<wx/wx.h>
-#include "../src/examples/10_module/01_shapes/panel.h"
+#include "panel.h"
 
 class Frame : public wxFrame 
 {
