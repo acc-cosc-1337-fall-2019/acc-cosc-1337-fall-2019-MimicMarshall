@@ -6,7 +6,7 @@ Write code to return hours given seconds since 1970
 */
 int Clock::get_hours() const
 {
-	return seconds / 3600 % 24 - 5;
+	return seconds / 3600 % 24 - 6;
 }
 
 /*
