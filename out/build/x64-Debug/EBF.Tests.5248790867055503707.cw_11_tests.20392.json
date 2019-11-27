@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "cw_11_tests",
+    "Command": "C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall/out/build/x64-Debug/test/classwork_test/11_assign_test/cw_11_tests.exe",
+    "Arguments": [
+      "-s"
+    ],
+    "WorkingDirectory": "C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall/out/build/x64-Debug/test/classwork_test/11_assign_test",
+    "ProjectFile": "C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall/test/classwork_test/11_assign_test/CMakeLists.txt",
+    "LineNumber": 3,
+    "Environment": {},
+    "ExpectsFailure": false,
+    "PassRegularExpression": null,
+    "FailRegularExpression": null,
+    "TargetName": "cw_11_tests.exe (test\\classwork_test\\11_assign_test\\cw_11_tests.exe)",
+    "TimeoutInMs": -1
+  }
+]
