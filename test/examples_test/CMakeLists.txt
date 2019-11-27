@@ -3,6 +3,6 @@
 #ADD_SUBDIRECTORY(03_module_test)
 #ADD_SUBDIRECTORY(04_module_test)
 #ADD_SUBDIRECTORY(09_module_test)
-#ADD_SUBDIRECTORY(11_module_test)
+ADD_SUBDIRECTORY(11_module_test)
 #ADD_SUBDIRECTORY(12_module_test)
 #ADD_SUBDIRECTORY(13_module_test)

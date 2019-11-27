@@ -50,32 +50,32 @@ The CXX compiler identification is MSVC, found in "C:/Users/Mimic/source/repos/a
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_9e5c5 && [1/2] Building C object CMakeFiles\cmTC_9e5c5.dir\testCCompiler.c.obj
-[2/2] Linking C executable cmTC_9e5c5.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_a6dcb && [1/2] Building C object CMakeFiles\cmTC_a6dcb.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_a6dcb.exe
 
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ff7c0 && [1/2] Building C object CMakeFiles\cmTC_ff7c0.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_ff7c0.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_0166f && [1/2] Building C object CMakeFiles\cmTC_0166f.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_0166f.exe
 
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_83546 && [1/2] Building CXX object CMakeFiles\cmTC_83546.dir\testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_83546.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_e990c && [1/2] Building CXX object CMakeFiles\cmTC_e990c.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_e990c.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Mimic/source/repos/acc-cosc-1337-fall-2019-MimicMarshall/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_4a729 && [1/2] Building CXX object CMakeFiles\cmTC_4a729.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_4a729.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ea9a3 && [1/2] Building CXX object CMakeFiles\cmTC_ea9a3.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_ea9a3.exe
 
 
 
