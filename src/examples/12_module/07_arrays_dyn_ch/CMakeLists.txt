@@ -1,1 +1,1 @@
-add_executable(ex_12_07_exe "main.cpp" "arrays_dyn_ch.h")
+add_executable(ex_12_07_exe "main.cpp" "arrays_dyn_ch.cpp")

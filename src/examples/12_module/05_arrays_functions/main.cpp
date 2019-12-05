@@ -8,7 +8,7 @@ int main()
 
 	int* hours_ptr = hours;
 
-	iterate_array(hours_ptr, SIZE);
+//	iterate_array(hours_ptr, SIZE);
 
 	return 0;
 }
