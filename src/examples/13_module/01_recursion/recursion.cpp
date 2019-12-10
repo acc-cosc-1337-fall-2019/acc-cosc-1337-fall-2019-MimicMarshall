@@ -2,6 +2,11 @@
 #include<iostream>
 //
 
+void call_myself()
+{
+	call_myself();
+}
+
 void display(int n)
 {
 	if (n == 0) 
@@ -24,7 +29,7 @@ int factorial(int n)
 		return f;
 	}
 
-	std::cout << "load stack"<<n<<' \n';
+	std::cout << "load stack "<<n<<' \n';
 	f = n * factorial(n - 1);
 	std::cout << "unload stack \n";
 	return f;
